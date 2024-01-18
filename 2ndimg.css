@@ -4,6 +4,10 @@
     color: white;
   }
 
+#img1{
+    height: 30%; 
+    width:100%;
+}
 #centered {
     position: absolute;
     top: 50%;
