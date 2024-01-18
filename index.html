@@ -71,7 +71,7 @@
 
     <h2 style="color:#18287E; font-size:40px;"> Books available in our e-library : </h2>
     <div class="flex">
-       <ul class="list-disc">
+       <ul class="list-disc flex-auto">
             <li> Introduction to Algorithms </li>
             <li> Clean Code </li>
             <li> Effective Java </li>
@@ -80,30 +80,31 @@
             <li> Ada - The enchantress of numbers </li>
             <li> The pragmatic programmer ........... </li>
         </ul>
-    <div class="flex-auto">
-        <img src="ebook.jpeg" alt="ebook" height="300" width="700">
-    </div>
+       <div class="flex-auto">
+          <img src="ebook.jpeg" alt="ebook" height="300" width="700">
+       </div>
     </div>
 
     <br>
 
-    <div class="bg-sky-900 text-white" id="lastbox">
-        <div class="flex-auto w-64 h-34 py-8 px-8  max-w-sm mx-auto">
-           &nbsp; &nbsp;  <p style="display:inline-block;">
-                <div class="fas fa-phone-alt"> </div>
-                &nbsp; &nbsp; &nbsp;0771234567  <br>
-                <div class="fa fa-envelope"> </div>
-                MyCode@gmail.com
-            </p> 
-        </div>
-        <div id="contact" class="flex-auto w-64 h-34 py-8 px-8 max-w-sm mx-auto ">
+    <div class="bg-sky-900 text-white flex flex-row items-center space-x-96" id="lastbox">
+       
+        <div id="contact" class="basis-1/3 py-2">
             <div class="follow"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow us </div>
-            <a href= "https://web.facebook.com/?_rdc=1&_rdr" class="fa fa-facebook" style="font-size:20px" target="_blank"> </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href= "https://web.facebook.com/?_rdc=1&_rdr" class="fa fa-facebook" style="font-size:20px" target="_blank"> </a>
             <a href= "https://www.linkedin.com/feed/" class="fa fa-linkedin" style="font-size:20px" target="_blank"> </a>
             <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" style="font-size:30px"> </a>
             <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube-play" style="font-size:30px"> </a>
         </div>
-        <div class="flex-auto w-64 h-34 py-8 px-8 max-w-sm mx-auto" > &copy;  2023 MyCode </div>
+        <div class="basis-1/3 py-8" > &copy;  2023 MyCode </div>
+        <div class="basis-1/3 py-4">
+            <p style="display:inline-block;">
+                 <div class="fas fa-phone-alt"> </div>
+                 &nbsp; &nbsp; &nbsp;0771234567  <br>
+                 <div class="fa fa-envelope"> </div>
+                 MyCode@gmail.com
+             </p> 
+         </div>
     </div>
 </body>
 </html>
