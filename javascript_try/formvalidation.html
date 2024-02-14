@@ -79,6 +79,16 @@
                   <option value="both"> Both (I am both available online and offline) </option>
                 </select>
                 </div>
+            <div>
+              <div class="tooltip"><label for="bankacc"> Account No:<span class="star">*</span></label>
+                <span class="tooltiptext">It is secure</span></div>
+                <div id="acc">
+                  <input id="pwd" type="password" name="pwd">
+                  <button>
+                    <img src="eyeclose.png" width="40%" height="40%" onclick="show_password()" id="eye">
+                  </button>
+                </div>
+            </div>
                 
               </div>
             <div class="item">
@@ -90,10 +100,27 @@
                 <input type="file" id="cv"> 
             </div>
             <div class="btn-block">
-              <button type="submit" href="/">Submit</button>
-              <button type="reset" href="/">Clear</button>
+              <button type="submit" href="/" class="endtwobutton">Submit</button>
+              <button type="reset" href="/" class="endtwobutton">Clear</button>
             </div>
           </form>
         </div>
+        <script>
+          function show_password()
+          {
+            var pwdin = document.getElementById("pwd").type;
+
+            if (pwdin == "password")
+            {
+              document.getElementById("pwd").type="text";
+              document.getElementById("eye").src="eyeopen.png";
+            }
+            else
+            {
+              document.getElementById("pwd").type="password";
+              document.getElementById("eye").src="eyeclose.png";
+            }
+          }
+        </script>
     </body>
 </html>
